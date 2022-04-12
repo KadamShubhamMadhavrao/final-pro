@@ -1,0 +1,734 @@
+function App() {
+  return (
+    <div className="App">
+      <div>
+        {/* Required meta tags */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Bootstrap CSS */}
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossOrigin="anonymous"
+        />
+        <title>Plant-Hub</title>
+        <nav
+          className="navbar navbar-expand-sm navbar-dark bg-dark"
+          aria-label="Third navbar example"
+          style={{ userSelect: "auto" }}
+        >
+          <div className="container-fluid" style={{ userSelect: "auto" }}>
+            <a className="navbar-brand" href="#" style={{ userSelect: "auto" }}>
+              Plant Hub
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample03"
+              aria-controls="navbarsExample03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style={{ userSelect: "auto" }}
+            >
+              <span
+                className="navbar-toggler-icon"
+                style={{ userSelect: "auto" }}
+              />
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarsExample03"
+              style={{ userSelect: "auto" }}
+            >
+              <ul
+                className="navbar-nav me-auto mb-2 mb-sm-0"
+                style={{ userSelect: "auto" }}
+              >
+                <li className="nav-item" style={{ userSelect: "auto" }}>
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    style={{ userSelect: "auto" }}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item" style={{ userSelect: "auto" }}>
+                  <a
+                    className="nav-link"
+                    href="#"
+                    style={{ userSelect: "auto" }}
+                  >
+                    Link
+                  </a>
+                </li>
+                {/* <li class="nav-item" style="user-select: auto">
+              <a class="nav-link disabled" style="user-select: auto"
+                >Disabled</a
+              >
+            </li> */}
+                <li
+                  className="nav-item dropdown"
+                  style={{ userSelect: "auto" }}
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown03"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style={{ userSelect: "auto" }}
+                  >
+                    Select
+                  </a>
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="dropdown03"
+                    style={{ userSelect: "auto" }}
+                  >
+                    <li style={{ userSelect: "auto" }}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        Office
+                      </a>
+                    </li>
+                    <li style={{ userSelect: "auto" }}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        Home decor
+                      </a>
+                    </li>
+                    <li style={{ userSelect: "auto" }}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        balcony
+                      </a>
+                    </li>
+                    <li style={{ userSelect: "auto" }}>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        add list
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              {/* <form style="user-select: auto">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="search"
+              aria-label="Search"
+              style="user-select: auto"
+            />
+          </form> */}
+            </div>
+          </div>
+        </nav>
+        {/* NAVBAR END */}
+        {/*  */}
+        {/* COROUSAL*/}
+        <div className="container">
+          <div
+            id="myCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+            style={{ userSelect: "auto" }}
+          >
+            <div className="carousel-indicators" style={{ userSelect: "auto" }}>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to={0}
+                className
+                aria-label="Slide 1"
+                style={{ userSelect: "auto" }}
+              />
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to={1}
+                aria-label="Slide 2"
+                style={{ userSelect: "auto" }}
+                className="active"
+                aria-current="true"
+              />
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to={2}
+                aria-label="Slide 3"
+                style={{ userSelect: "auto" }}
+                className
+              />
+            </div>
+            <div className="carousel-inner" style={{ userSelect: "auto" }}>
+              <div className="carousel-item" style={{ userSelect: "auto" }}>
+                <img
+                  className="bd-placeholder-img"
+                  width="100%"
+                  height="400px"
+                  src="https://images.pexels.com/photos/5706224/pexels-photo-5706224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+                <div className="container" style={{ userSelect: "auto" }}>
+                  <div
+                    className="carousel-caption col-md-3 text-dark text-start"
+                    style={{ userSelect: "auto" }}
+                  >
+                    <h1 style={{ userSelect: "auto col-md-4" }}>
+                      Plants for Smart Planters.
+                    </h1>
+                    <p style={{ userSelect: "auto" }}>
+                      First, you should understand that plants are something
+                      that gives an eco-friendly environment to you and your
+                      family.buy a plant that suits your home needs and
+                      requirements, which acts as a natural filter and removes
+                      the airborne toxins in your home.
+                    </p>
+                    <p style={{ userSelect: "auto" }}>
+                      <a
+                        className="btn btn-lg btn-primary"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        Shop Now
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="carousel-item active"
+                style={{ userSelect: "auto" }}
+              >
+                {/* <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="400px"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            style="user-select: auto"
+          >
+            <rect
+              width="100%"
+              height="100%"
+              fill="#777"
+              style="user-select: auto"
+            ></rect>
+          </svg> */}
+                <img
+                  className="bd-placeholder-img"
+                  width="100%"
+                  height="400px"
+                  src="https://burst.shopifycdn.com/photos/bringing-the-outside-in.jpg?width=746&format=pjpg&exif=1&iptc=1"
+                  alt=""
+                />
+                <div className="container" style={{ userSelect: "auto" }}>
+                  <div
+                    className="carousel-caption"
+                    style={{ userSelect: "auto" }}
+                  >
+                    <h1 style={{ userSelect: "auto" }}>
+                      FIND THE PERFECT PLANT FOR YOU!.
+                    </h1>
+                    <h4 style={{ userSelect: "auto" }}>
+                      Whether you are going to buy indoor plants, houseplants,
+                      or outdoor plants online, always consider Plant-Hub to
+                      grab good quality and healthy plants.
+                    </h4>
+                    <p style={{ userSelect: "auto" }}>
+                      <a
+                        className="btn btn-lg btn-primary"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        Go for
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item" style={{ userSelect: "auto" }}>
+                {/* <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="400px"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            style="user-select: auto"
+          >
+            <rect
+              width="100%"
+              height="100%"
+              fill="#777"
+              style="user-select: auto"
+            ></rect>
+          </svg> */}
+                <img
+                  className="bd-placeholder-img"
+                  width="100%"
+                  height="400px"
+                  src="https://images.pexels.com/photos/775995/pexels-photo-775995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+                <div className="container" style={{ userSelect: "auto" }}>
+                  <div
+                    className="carousel-caption col-9 text-end"
+                    style={{ userSelect: "auto" }}
+                  >
+                    <h1 style={{ userSelect: "auto" }}>Buy Plants Here.</h1>
+                    <p className="text-md-right" style={{ userSelect: "auto" }}>
+                      When nothing sounds good enough to gift to your loved one,
+                      place your bet on plants. They are the tokens of love that
+                      will always be cherished and will remind your loved ones
+                      of you and where else to get them except the leading plant
+                      nursery,Plant-Hub. We offer free shipping services on
+                      orders above 999. Place your order anytime because we are
+                      always available for you.
+                    </p>
+                    <p style={{ userSelect: "auto" }}>
+                      <a
+                        className="btn btn-lg btn-primary"
+                        href="#"
+                        style={{ userSelect: "auto" }}
+                      >
+                        Buy Now
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+              style={{ userSelect: "auto" }}
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+                style={{ userSelect: "auto" }}
+              />
+              <span className="visually-hidden" style={{ userSelect: "auto" }}>
+                Previous
+              </span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+              style={{ userSelect: "auto" }}
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+                style={{ userSelect: "auto" }}
+              />
+              <span className="visually-hidden" style={{ userSelect: "auto" }}>
+                Next
+              </span>
+            </button>
+          </div>
+        </div>
+        {/* COROUSAL END*/}
+        <br />
+        {/* CONTAINER */}
+        <div
+          className="p-4 p-md-5 mb-4 text-white rounded bg-image"
+          style={{
+            backgroundImage:
+              'url("https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+            height: "400px",
+          }}
+        >
+          <div className="col-md-4 px-0" style={{ userSelect: "auto" }}>
+            <h1
+              className=" fst-italic text-dark font-weight-bold"
+              style={{ userSelect: "auto" }}
+            >
+              Benifits of Ordering Plants Online
+            </h1>
+            <p
+              className="lead textmy-5 text-dark "
+              style={{ userSelect: "auto" }}
+            >
+              The trend is hot and the question "should I buy plants online?"
+              may have crossed your mind many times. Today, we will tell you
+              some amazing benefits of ordering plants online, which help you to
+              answer the question next time it hits you.
+            </p>
+            <p className="lead  mb-4" style={{ userSelect: "auto" }}>
+              <a
+                href="https://www.floweraura.com/blog/benefits-of-ordering-plants-online"
+                className="text-white fw-bold"
+                style={{ userSelect: "auto" }}
+              >
+                Continue reading...
+              </a>
+            </p>
+          </div>
+        </div>
+        <br />
+        <div
+          className="p-8 p-md-5 mb-8 text-white rounded bg-image"
+          style={{
+            backgroundImage:
+              'url("https://st3.depositphotos.com/13324256/18563/i/1600/depositphotos_185635996-stock-photo-top-view-green-plants-gardening.jpg")',
+            height: "400px",
+          }}
+        >
+          <div className="row justify-content-end">
+            <div className="col-md-3" />
+            <div
+              className="col-md-6 text-end px-0"
+              style={{ userSelect: "auto" }}
+            >
+              <h1
+                className=" fst-italic font-weight-bold text-end"
+                style={{ userSelect: "auto" }}
+              >
+                Houseplant fertilizer basics: How and when to feed houseplants
+              </h1>
+              <p className="lead my-3" style={{ userSelect: "auto" }}>
+                Being a houseplant parent can be confusing business! Unlike
+                human babies, houseplants don’t cry when they’re hungry or
+                uncomfortable. Instead, they respond to their environment in
+                different, far more subtle, ways. Knowing when it’s time to feed
+                houseplants is challenging stuff, even for long-time houseplant
+                growers.
+              </p>
+              <p className="lead mb-0" style={{ userSelect: "auto" }}>
+                <a
+                  href="https://savvygardening.com/houseplant-fertilizer/"
+                  className="text-white fw-bold"
+                  style={{ userSelect: "auto" }}
+                >
+                  Continue reading...
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div
+          className="p-4 p-md-5 mb-9 text-white rounded bg-image"
+          style={{
+            backgroundImage:
+              'url("https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpg")',
+            height: "fit-content",
+            maxWidth: "fit-content",
+          }}
+        >
+          <div className="row justify-content-end">
+            <div className="col-md-3" />
+            <div className="col-md-6 px-0" style={{ userSelect: "auto" }}>
+              <h1
+                className=" fst-italic font-weight-bold"
+                style={{ userSelect: "auto" }}
+              >
+                ESSENTIAL GARDEN TOOLS: Every Gardener needs in their shed.
+              </h1>
+              <p className="lead my-3 " style={{ userSelect: "auto" }}>
+                Don't let a lack of garden tools or know-how keep you from
+                growing your own vegetables and fruit. We've rounded up the
+                essential gardening tools you need to get started, plus helpful
+                tips and optional add-ons that can make gardening easier.
+              </p>
+              <p className="lead mb-0" style={{ userSelect: "auto" }}>
+                <a
+                  href="https://www.eatingwell.com/article/17068/the-only-tools-you-need-to-start-a-garden/"
+                  className="text-white fw-bold"
+                  style={{ userSelect: "auto" }}
+                >
+                  Continue reading...
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* CONTAINER END */}
+        <br />
+        {/* vdo */}
+        <iframe
+          width={1213}
+          height={683}
+          src="https://www.youtube.com/embed/N-gjXi2yZ5I"
+          title="YouTube video player"
+          frameBorder={0}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        {/* vdo END */}
+        <br />
+        <br />
+        {/* circle img */}
+        <div className="container marketing" style={{ userSelect: "auto" }}>
+          {/* Three columns of text below the carousel */}
+          <div className="row" style={{ userSelect: "auto" }}>
+            <div className="col-lg-4" style={{ userSelect: "auto" }}>
+              <img
+                className="bd-placeholder-img rounded-circle"
+                width={200}
+                height={200}
+                src="https://media.istockphoto.com/photos/empty-flower-pot-picture-id1298515744?b=1&k=20&m=1298515744&s=170667a&w=0&h=bzWWSFweXQQXKr8jGZVM3dQT406kUemMb1p2EA1upyc="
+                alt=""
+              />
+              <title style={{ userSelect: "auto" }}>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="#777"
+                style={{ userSelect: "auto" }}
+              />
+              <text
+                x="50%"
+                y="50%"
+                fill="#777"
+                dy=".3em"
+                style={{ userSelect: "auto" }}
+              ></text>
+              <h2 style={{ userSelect: "auto" }}>Planters</h2>
+              <p style={{ userSelect: "auto" }}>
+                Choose from a wide variety of garden planter and flower pot
+                designs for your plants online at best prices with assured
+                doorstep delivery!
+              </p>
+              <p style={{ userSelect: "auto" }}>
+                <a
+                  className="btn btn-dark"
+                  href="#"
+                  style={{ userSelect: "auto" }}
+                >
+                  View details »
+                </a>
+              </p>
+            </div>
+            {/* /.col-lg-4 */}
+            <div className="col-lg-4" style={{ userSelect: "auto" }}>
+              {/* <svg
+            class="bd-placeholder-img rounded-circle"
+            width="200"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            style="user-select: auto"
+          > */}
+              <img
+                className="bd-placeholder-img rounded-circle"
+                width={200}
+                height={200}
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhUIBxQVFRMXGB4bGBgYFxgfGBgfGRgWGhgcFxgbHSgsGx4nIRgeITEhJSk3Mi4uHR8zODMsOCk5Li8BCgoKDg0OGxAQGzUlICU3LTI1Ljc3LS0tLS0tLTM1LTUuLS4tLS03LS0tKy0tLS0tLS0tLS01Ny0tLS0vLS8tLf/AABEIALEBHQMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQIDCAH/xAA+EAACAQIDBgMECAQFBQAAAAAAAQIDEQQFBhIhMUFRYQcTgSIycZEUFUJScoKhwSNisbIWM9Hw8VOSk6Ph/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIDAQT/xAAgEQEBAQEBAQEAAgMBAAAAAAAAAQIRIQMxEkEyYYEi/9oADAMBAAIRAxEAPwC8QAAAAAAAAAAAAAAAAAAAAAAAAAAAOuVaMayoylFSabUbq7S4tLmB2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKc1jqvHaU8QakcNUc6M1Cao1HeGy4qLUfuPahLfHm96ZY+ldU4fVGD8/L21KNtunLdODfVc10a3M51E3LeN4ADqwAq7xO168NKeRZLK01urVU/d6wg/vdZcuC3+7y3idamZ2svX3iSsqlLLNP2qYjhKe506XVfzTXyXO9rGL4M4CeMliNS5nKVSrN+VCc223GNpTab5N2VuWwyo1RlVrRwOEjtVJNLZXNyaUILvf/AHuPTenssWS5HRy2Fv4cIxbXNpe0/V3fqTPayxbvXa2IALbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOEasZ1HTi05RtdJq6vwuuVzmUtrfOa2QeI1bF5a9mezTe/wB2olTV4zj9pfqrbrMn+jtc4fU1ONFNU8RbfSk97txdN/bXPqlxSJmv6RNy3jUeMmnPrXT/ANaUF/Fw95PrKm/8xellL0l1KbyPOquS5pHM8vlacXZ9JJ8YzXNStv7q/Gx6iq01WpOlVV4yTTT4NNWaZ5fz/K/qDPq2XVd6pycL83F2lBvvsuL+IrH7Z5ex6M0vqGjqXK1jsA+04P3qcucZL9+a3m3PM+kdQz0rqCOMg26d9mrFcJwe/hzavtR/+s9K0aqrUlVpNOMkmmuDTV00dl61+e/5RFfEnVX+GMjvhmvpFVuNK/2be/Nr+VNerjyKBo1NmEsTV32d9+/ak7tXvx+8/h3Jv4313V1fTw6bajQjZdHKdS/zSj8kQWUfNkqVBOSjuVub+1K/K/8ARIjbD6at0nPgplax2qJ46vvVGDkr/fqNxT+NlP5l68OJSvh1nVHSmXVZ14SniKrV1GyhGME9lOTfG8pN2XNdCY5ZSxWsH9JzSTpYTlThdOqu74uPd8eSXE5Nz8ntbfPyJrQrxxFPzKElKPVO63bnvR2HGlTVKmqdJJRSskuCS4JI5GrUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWXi7pKeOS1Blycp04pVIrjsxbanHvG7uunw31DScqUlXw7aaaacW1KD7Nb12f+h6fxOY0sNio4TFTUZTTcVLcpW3NJvc3v4cd5Quv8o/w9qqdGiv4c1twXJxlxXo1b0T4mW/3x5/rnnq1PDHVEtRZM6WOd69FpTe724u+xOy5uzT7pvmRTxv0+4ShqHDRvGyp1rct/8ADm/nst/gIdpLP3pfP6eYwvKlJONRc3B2v+aLSfe3LaPQc4Uc6yvZls1aFaHxjOM1+6ZWb2O5v888v68q1PboKUfs7vR8Pk93qj0r4fzdTRGDlL/oQXyikv0RSuttD1tJZh5kNqpgpuyq2u6alyq24OPHa4Oy4PcWjkOMnlnhNTxEd1SFDZXZ3cE/TiPxz5Zub6inidgqON1eq9Ce1Py1GpFcIuLlz6tOzXL1NJRw/Chh43k90YxW99kkdmR4CpmWN+i4OO1Ul8l1lJ8kuv7stzTGlqWRU/Nft1mvaqNcO0F9mP6vn28+c6+l7VSdvjRaT0FHDWxmeJSnxVLjGP4/vPtw+JOalSNCk6lVqMUrttpJJdXyRj5rmNPKcunmGOezTpx2pP8AZLm29yXVoobWeuK+rqv0WmnTw6d40k7uVuDqtcXzUVuXdq56JJicjut5xFoZ14m4DLHsUJvES6UUnH/yNqPybIb/AIwx+t83jlOWP6NTqX9zfNQ+3OdS10kuGza7aV3cg+X5fPGVFRwMPMm3Zc436L7z/Rcy8tAaQWmcE62Je3iaqXmS5LpCHZc3zfZJKZq6vEZu93/SS4DCRwGChg8PfZhFRV227RVldvi+53gGr0AAAAAAAAAAAAAAAAAAAAAAAAAAAAADUaoyOOf5U8JUdpJ7UJdJK/Hs02n8Sl8wwM8Pinl+Yp3g7bEndR7xvya33Rf5ptRaaoagpJYpOM17tSNtpdu67P8AQx+vy/l7P1NnVGVMojUotU7pO3O9n1Sfy/4LU8K8xjDT8MnxFSPnU3JRi3vlBycouKfG17drEazrS+IyCDq1F5tHnUgt8fxw5fFXRHbu6qQdmndST4dLPkzzZ3v53lRJJer+lFSjsy3p8UaGrh41tKVcFNJR/i04rps1Jxp26WtEyNJ5o84yCni6nv22Z/ii9lv1tf1NdnFV0dN1vK97zpW+PnbX7HstlnWlffD7J4ZbkUcRDfOt7blbe4u/l7uS2Wnbq2Sc68PSWHoRo0+EUkvglZGJisw2a7wmCW3VSu1e0aafB1JWezfkuL6Wu12SZnCeRBfGrFSnl1DKqDt5k3OfTZppWT/NJP8AL2IfpjRlXM5Ww0Lx51JbofPn8F6luVI4XDVfpGdVaE633qjgtntTjJvYX6vm2Y2N1xhMNLysM5VpXso0ot3fKzdk/S5luS3tvIi4lvayNN6VoZBHborbq2s6kuPdRXCK/Xq2b41mT46vjr1MZh/Ihb2dqonN/GCj7K+Lv2Nma5kk8XAAFOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNaz1jR0vhrT9uvJXhTXy2pv7Mb/AD327Ufj85xGPxrx+NrVNtu6alJNfgin7K7biNb4y39Znx6UaurMimaaAwuNredhdqi3xULbD/I+HpZGh8NM3zLMouVa9XDJO1St7LbXKEkm5d27rvfcWFhcXHE3irqUfehL3o/FdOjW58mPNT2KzqanWm0rhVlFOWUp3tKTTfFv2W78t6lCS/E19m50ZmozwdKjPf5mO/srTk/0pmdnjWDxEMdw3q7/AA7Tf/rlV9dk0Ob15U8Xh40EnJVsRs34bc6040r9rqV+1yL54fiS4/FSrVngsDLZaV6tTc/KVr2V9zqNb0nuS9p8lKn86zR46vONByVDaexC7s1f353ftTlxcpXe/iWxUoKhgXkuD9upOL25Plt3UqtVrnJ3aXFvhZJtY+S6Mw2VVFW2XUqLhKdnb8MVuXx49zn0xrfkLLUC0/ofEZqlVqryaT5yXtNfyw/d29Sysj09QySko4OHtc6krOb9eS7LcbYF4+WcfjszIAA0UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8bsrs+mm1lj1lulsRim0mqbSb+9P2I/rJCuW8nVE4+vV1NqGeIpRlUq1pvy4Le0rtRXZKK4vcrN9yw9O+FMKc44nUM/MfHyoXUL9JT4zXwt6mx8LNMfVOW/WeMjatVS2U1vp0/sx7N8X+VPgTszzj+6w+fyl9040qao01SpJRilZJKySW5JJcEY+OwSxcVKEnCpH3ZxtddU77pRfOL3P4pNZQNHoRzOcQ8RlNbBY5JVoQ8xW92pGDUnKF/hZx4q9t6abj2DrP61jmGKW0qW21FPfKb2Iwiu7qYiol3RMNR4P6Vlcp0v8AMgnKD7qLvF9pJuL7MhumKDx+p1v9ik5ScerUrwb/ADVW1+A8++zURZ6neW4V4XD/AMZ7VST2qkusna9uysopckkZYB6FgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHTi8LDGUfJxcIzjdO0kmrxacXZ9GkzuAAAAAABxqR2qbi+aIH4XR82WIxUuL2F/e2T4hHhbT8vA10+VTZ/wC1My3/AJ5/6m/qbgA1UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBm2Y/QKe0lfc38jPNFqmh52GtHjsyt8lYnfef+Xc8766cNqN4irsJRXz/1PmR4ZZPTnHDXanNze11fS1txHNP5K8HmUmuHlxd/i3ZfKPAktau8NhnUSvbe12XGxGs2a53qu517JxscRmDw8VOSTV0vm0bFcCG5Xm/1liHg6yanG0ZJ9brf+1iZFy3tlT5zwABTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBnEb4ZSXJ/wBTPOrE0vOoOn1X/By/jsvrQOsqMVsr3t36GVUqR29iTV+hD8uxFSWrp5dJSvCTlK/DY5f3Rt2JjmUFVw2y0r8rq9ifp89fP3veuY1NXj7gsIp5gsRLio2Xzv8Aubg12R4d0MGnN3b/AKGxO5vZ125mbyAAKcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdCwlNV3iFCO3KylLZW07cLvnY5yoRl70U/RHYAPiVlZH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q=="
+                alt=""
+              />
+              <title style={{ userSelect: "auto" }}>Placeholder</title>
+              <rect
+                width="200%"
+                height="200%"
+                fill="#777"
+                style={{ userSelect: "auto" }}
+              />
+              <text
+                x="50%"
+                y="50%"
+                fill="#777"
+                dy=".3em"
+                style={{ userSelect: "auto" }}
+              ></text>
+              <h2 style={{ userSelect: "auto" }}>Flora &amp; Verdure</h2>
+              <p style={{ userSelect: "auto" }}>
+                Order beautiful premium quality live plants online for your home
+                garden from Plant-Hub and get it delivered safely to your
+                doorstep.
+              </p>
+              <p style={{ userSelect: "auto" }}>
+                <a
+                  className="btn btn-dark"
+                  href="#"
+                  style={{ userSelect: "auto" }}
+                >
+                  View details »
+                </a>
+              </p>
+            </div>
+            {/* /.col-lg-4 */}
+            <div className="col-lg-4" style={{ userSelect: "auto" }}>
+              {/* <svg
+            class="bd-placeholder-img rounded-circle"
+            width="200"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            style="user-select: auto"
+          > */}
+              <img
+                className="bd-placeholder-img rounded-circle"
+                width={200}
+                height={200}
+                src="https://thumbs.dreamstime.com/b/garden-tools-plants-white-background-isolated-40344658.jpg"
+                alt=""
+              />
+              <title style={{ userSelect: "auto" }}>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="#777"
+                style={{ userSelect: "auto" }}
+              />
+              <text
+                x="50%"
+                y="50%"
+                fill="#777"
+                dy=".3em"
+                style={{ userSelect: "auto" }}
+              ></text>
+              <h2 style={{ userSelect: "auto" }}>Gardening Utensils</h2>
+              <p style={{ userSelect: "auto" }}>
+                Buy Garden Tools &amp; Accessories Online - High quality all
+                variety of Garden Tools ,Fertilizer's &amp; Accessories at best
+                price in India.
+              </p>
+              <p style={{ userSelect: "auto" }}>
+                <a
+                  className="btn btn-dark"
+                  href="#"
+                  style={{ userSelect: "auto" }}
+                >
+                  View details »
+                </a>
+              </p>
+            </div>
+            {/* /.col-lg-4 */}
+          </div>
+          {/* /.row */}
+        </div>
+        {/* circle img End */}
+        {/* jumbotron */}
+        {/* https://i.pinimg.com/originals/7e/fb/7f/7efb7f896cb3c1313545c490d592e1d3.jpg */}
+        <div className="container py-4" style={{ userSelect: "auto" }}>
+          <div
+            className="p-5 mb-4 bg-light rounded-3 bg-image"
+            style={{
+              backgroundImage:
+                'url("https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-home-page-banner-buy-1-get-1-seeds-free-v3_7a31c468-0279-4ecc-b9f2-0405ac1115db_1200x500.jpg?v=1636743248")',
+              height: "400px",
+            }}
+          >
+            <div
+              className="container-fluid py-5"
+              style={{ userSelect: "auto" }}
+            >
+              <h1 className="display-5 fw-bold" style={{ userSelect: "auto" }}>
+                {/* Avail offers on Plant-Hub */}
+              </h1>
+              <p className="col-md-8 fs-4" style={{ userSelect: "auto" }}>
+                {/* Every plant purchase is a gift that keeps on giving. Earn coins
+                and redeem them for exclusive discounts. What's more? Refer a
+                friend and earn Rs. 250 on their first order! */}
+              </p>
+              <button
+                className="btn btn-dark position-absolute bottom-0 end-0  btn-lg"
+                type="button"
+                style={{ userSelect: "auto" }}
+              >
+                Tap here to Shop
+              </button>
+            </div>
+          </div>
+          <div
+            className="row align-items-md-stretch"
+            style={{ userSelect: "auto" }}
+          >
+            <div className="col-md-6" style={{ userSelect: "auto" }}>
+              <div
+                className="h-100 p-5 text-white bg-image"
+                style={{
+                  backgroundImage:
+                    'url("https://burst.shopifycdn.com/photos/gardening-flatlay.jpg?width=746&format=pjpg&exif=1&iptc=1")',
+                  height: "400px",
+                }}
+              >
+                <h2 style={{ userSelect: "auto" }}>Select Right Tools</h2>
+                <p style={{ userSelect: "auto" }}>
+                  Fertilizers are chemical substances supplied to the crops to
+                  increase their productivity. These are used by the farmers
+                  daily to increase the crop yield.
+                </p>
+                <button
+                  className="btn btn-dark btn-outline-light"
+                  type="button"
+                  style={{ userSelect: "auto" }}
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div className="col-md-6" style={{ userSelect: "auto" }}>
+              <div
+                className="h-100 p-5  border rounded-3 bg-image"
+                style={{
+                  backgroundImage:
+                    'url("https://burst.shopifycdn.com/photos/close-up-of-a-yellow-flower-detail.jpg?width=746&format=pjpg&exif=1&iptc=1")',
+                  height: "400px",
+                }}
+              >
+                <h2 style={{ userSelect: "auto" }}>Flowers</h2>
+                <p style={{ userSelect: "auto" }}>
+                  Search and save now! Find the lowest price for Flower Delivery
+                  today!
+                </p>
+                <button
+                  className="btn btn-dark btn-outline-secondary"
+                  type="button"
+                  style={{ userSelect: "auto" }}
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* jumbotron end */}
+        {/* experiment */}
+
+        {/* experiment end */}
+        {/* Optional JavaScript; choose one of the two! */}
+        {/* Option 1: Bootstrap Bundle with Popper */}
+        {/* Option 2: Separate Popper and Bootstrap JS */}
+        {/*
+    
+    
+    */}
+      </div>
+    </div>
+  );
+}
+export default App;
